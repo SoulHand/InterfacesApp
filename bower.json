@@ -1,0 +1,16 @@
+{
+  "name": "Interfaces-App",
+  "homepage": "https://github.com/SoulHand/InterfacesApp",
+  "authors": [
+    "Xiu-ling <kiralius@gmail.com>"
+  ],
+  "description": "Framework css para maquetado de SoulHand-App",
+  "main": "css/main.css",
+  "keywords": [
+    "Interfaces",
+    "SoulHand",
+    "css",
+    "framework"
+  ],
+  "license": "MIT"
+}
