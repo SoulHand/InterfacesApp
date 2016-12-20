@@ -21,7 +21,7 @@ body{
     font-weight: bold;
 }
 .estudiante div, .profesor div, .usuario div{
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 .estudiante input[type='text'], .profesor input[type='text'], .usuario input[type='text']{
     padding: 7px 6px;
