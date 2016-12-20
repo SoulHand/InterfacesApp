@@ -12,5 +12,8 @@
     "css",
     "framework"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "boostrap#4.0.0-alpha.5"
+  }
 }
