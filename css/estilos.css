@@ -8,7 +8,7 @@ body{
     margin: auto;
     background-color: #E2ECEE;
 }
-.estudiante, .profesor, .usuario{
+.ci, .estudiante, .profesor, .usuario{
     border: 1px solid #CED5D7;
     border-radius: 6px;
     padding: 45px 45px 20px;
@@ -72,4 +72,9 @@ body{
     background: #cfe6ef;
     background: -moz-linear-gradient(top, #cfe6ef 0%, #edfcff 100%);
     background: -webkit-linear-gradient(top, #cfe6ef 0%,#edfcff 100%);
+}
+
+.formulario form {
+    width: 300;
+    height: 300;
 }

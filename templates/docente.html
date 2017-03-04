@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css"></head>
   <body>
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,17 +45,60 @@
   </div>
 </nav>
     <div class="container">
-    <br>
-   <p>U. E Especial Bolivariana Cumaná</p>
-<p>La Unidad Educativa Especial Bolivariana Cumaná es una institución académica enfocada en el control, seguimiento y mejoramiento de estrategias para el desarrollo integral de las personas con discapacidad auditiva y sorda, bajo un régimen estándar de educación combinada con una serie de procesos enfocados a la integración del discapacitado.
-</p><!-- Content here -->
-</div><br>
-<center><img src="1.jpg" width="600" height="300" ></center>
+    <form>
+<h3><b>Registrar Docente:</b></h3>
+<br>
+<form class=" formulario">
+<div><label for="ci"><b>Cedula</b></label>
+    <input type="texto" class="form-control" id="ci" aria-describedby="ci_docente" maxlength=" 12 "placeholder="V123456789" >
+    <small id="ci_docente" class="form-text text-muted">su Cedula.</small>
+  <div class="form-group">
+    <label for="nombre_docente"><b>Nombre</b></label>
+    <input type="texto" class="form-control" id="nombre_docente" aria-describedby="nombre_docente" maxlength=" 20 "placeholder="XXXXXXXX" >
+    <small id="nombre_docente" class="form-text text-muted">su nombre.</small>
+  </div>
+  <div class="form-group">
+    <label for="apellido_docente"><b>Apellido</b></label>
+    <input type="texto" class="form-control" id="apellido_docente" aria-describedby="apellido_docente" placeholder="XXXXXXXX" maxlength=" 20 ">
+    <small id="apellido_docente" class="form-text text-muted">su Apellido.</small>
+  </div>
+  <div class="form-group">
+    <label for="Telefono"><b>Telefono</b></label>
+    <input type="texto" class="form-control" id="Telefono" aria-describedby="Telefono" placeholder="XXXXXXXX" maxlength=" 12 ">
+  </div>
+   <div class="form-group">
+    <label for="exampleInputEmail1"><b>Email </b></label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" >
+    <small id="emailHelp" class="form-text text-muted">coloque su correo.</small>
+  </div>
+  
+  <fieldset class="form-group">
+    <legend><b>Interprete</b></legend>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Si
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+        No
+      </label>
+    </div>
+    
+  </fieldset>
+  
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form></form>
+</div>
 
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
