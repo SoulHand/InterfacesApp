@@ -45,43 +45,24 @@
   </div>
 </nav>
     <div class="container">
-    <form> <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="buscar">
-        </div>
-      </form>
-<h3><b>Docente </b></h3>
+    <form>
+<h3><b>Periodo Escolar:</b></h3>
 <br>
 <form class=" formulario">
+<div><label for="nombre"><b>Nombre</b></label>
+    <input type="texto" class="form-control" id="nombre_p" aria-describedby="ci_docente" maxlength=" 50 "placeholder="" >
+  <div class="form-group">
+    <label for="nombre_docente"><b>Año Inicio</b></label>
+    <input type="date" class="form-control" id="ano-i" aria-describedby="ano" maxlength=" 12 " >
+  </div>
+   <div class="form-group">
+    <label for="nombre_docente"><b>Año Fin</b></label>
+    <input type="date" class="form-control" id="ano-f" aria-describedby="ano" maxlength=" 12 " >
+  </div>
 
-  <table class="table table-striped">
-  <thead>
-    <tr>
-      <th><h4>Nombre</h4></th>
-      <th><h4>Apellido</h4></th>
-      <th><h4>Email</h4></th>
-      <th><h4>interprete</h4></th>
-     <th><center><h4> Modificar/Eliminar</h4></center></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-    <th><h4></h4></th>
-    <th><h4></h4></th>
-    <th><h4></h4></th>
-    <th><h4></h4></th>
-      <th><center><button type="button" class="btn btn-default btn-lg" aria-label="glyphicon glyphicon-remove">
-  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-</button>
-<button type="button" class="btn btn-default btn-lg" aria-label="glyphicon glyphicon-pencil" >
-  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-</center></button>
-</th>
-      
-  </tbody>
-</table></form>
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form></form>
 </div>
-
 
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
