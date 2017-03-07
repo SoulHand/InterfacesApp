@@ -1,5 +1,5 @@
-$=require("jquery")
-JQuery=$
+var jQuery = require("jquery");
+
 require("tether")
 require("../scss/main.scss")
 require("bootstrap")
