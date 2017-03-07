@@ -46,23 +46,61 @@
 </nav>
     <div class="container">
     <form>
-<h3><b>Conflicto Cognitivo:</b></h3>
+<h3><b>Reguistar Usuario:</b></h3>
 <br>
 <form class=" formulario">
-
-  <table class="table table-striped">
-  <thead>
-    <tr>
-      <th><h4>Nombre</h4></th>
-      
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th></th>
-      
-  </tbody>
-</table></form>
+<div><label for="ci"><b>Cedula</b></label>
+    <input type="texto" class="form-control" id="ci_p" aria-describedby="ci_p" maxlength=" 12 "placeholder="V123456789" required autofocus>
+    <small id="ci_p" class="form-text text-muted">introduzca su Cedula.</small>
+  <div class="form-group">
+    <label for="nombre_p"><b>Nombre</b></label>
+    <input type="texto" class="form-control" id="nombre_p" aria-describedby="nombre_docente" maxlength=" 20 "placeholder="XXXXXXXX" required autofocus>
+    <small id="nombre_p" class="form-text text-muted">introduzca su nombre.</small>
+  </div>
+  <div class="form-group">
+    <label for="apellido_p"><b>Apellido</b></label>
+    <input type="texto" class="form-control" id="apellido_p" aria-describedby="apellido_p" placeholder="XXXXXXXX" maxlength=" 20 " required autofocus>
+    <small id="apellido_p" class="form-text text-muted">introduzca su Apellido.</small>
+  </div>
+  <div class="form-group">
+    <label for="fh_n"><b>Fecha de Nacimiento</b></label>
+    <input type="texto" class="form-control" id="fh_n" aria-describedby="apellido_p" placeholder="XXXXXXXX" maxlength=" 20 " required autofocus>
+    <small id="fh_n" class="form-text text-muted">introduzca su Fecha de nacimiento.</small>
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="Telefono"><b>Telefono</b></label>
+  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+    <div class="input-group-addon"><select  >
+      <option>0293</option>
+      <option>0412</option>
+      <option>0414</option>
+      <option>0424</option>
+      <option>0416</option>
+      <option>0426</option>
+    </select></div>
+    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="" required autofocus>
+  </div>
+   <br>
+   <br>
+   <h3><b>Login:</b></h3>
+   <div class="form-group">
+    <label for="exampleInputEmail1"><b>Email </b></label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" required autofocus>
+    <small id="emailHelp" class="form-text text-muted">coloque su correo.</small>
+  </div>
+  <div class="form-group">
+    <label for="nombre_p"><b>Nombre de usuario</b></label>
+    <input type="texto" class="form-control" id="nombre_p" aria-describedby="nombre_docente" maxlength=" 20 "placeholder="XXXXXXXX" required autofocus>
+    <small id="nombre_p" class="form-text text-muted">introduzca su nombre de usuario.</small>
+  </div>
+  <div><label for="ci"><b>Contaseña</b></label>
+    <input type= "password" value="hunter2" class="form-control" id="contraseña" aria-describedby="contraseña" maxlength=" 12 " required autofocus>
+    <small id="ci_p" class="form-text text-muted">introduzca su contraseña de 8 a 15 caracteres</small>
+  
+  
+  
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form></form>
 </div>
 
 
