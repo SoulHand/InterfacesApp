@@ -5,12 +5,19 @@ module.exports = {
     entry: './scss/main.scss',
     output: {
         path: './scss',
-        filename: './css/app.css'
+        filename: '../css/app.js'
     },
     module: {
-        loaders: [
-          { test: /\.scss?$/, loader: "sass-loader" }
-        ],
+        rules: [{
+            test: /\.scss$/,
+            use: [{
+                loader: "style-loader" // creates style nodes from JS strings
+            }, {
+                loader: "css-loader" // translates CSS into CommonJS
+            }, {
+                loader: "sass-loader" // compiles Sass to CSS
+            }]
+        }]
     }
 };
 
