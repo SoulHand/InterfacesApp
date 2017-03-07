@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/estilos.css"></head>
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="../css/form.css"></head>
   <body>
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,14 +48,14 @@
    <div class="container">
 
       <form class="form-signin">
-        <h2 class="form-signin-heading">Por favor regístrese</h2>
+        <h2 class="form-signin-heading">Iniciar Sección</h2>
         <label for="nombre_usuario" class="sr-only">Nombre de usuario</label>
-        <input type="email" id="usuario" class="form-control" placeholder="usuario" required autofocus>
+        <input type="email" id="usuario" class="form-control" placeholder="usuario" required autofocus><br>
         <label for="contraseña" class="sr-only">Contraseña</label>
-        <input type="password" id="contraseña" class="form-control" value="hunter2" required autofocus>
+        <input type= "password" value="hunter2" class="form-control" id="contraseña" aria-describedby="contraseña" maxlength=" 18 " required autofocus>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="remember-me"> Remember me
+           
           </label>
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
