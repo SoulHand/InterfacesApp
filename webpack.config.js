@@ -1,14 +1,41 @@
 var webpack = require('webpack');
 
-// webpack.config.js 
+
 module.exports = {
-    entry: './scss/main.scss',
+    entry: './src/js/main.js',
     output: {
-        path: './scss',
-        filename: '../css/app.js'
+        path: './dist/',
+        filename: 'app.js'
     },
     module: {
-        rules: [{
+        loaders: [
+            { 
+                test: /\.(css|scss)$/, 
+                use:[
+                    {
+                        loader: "style-loader" // creates style nodes from JS strings
+                    },
+                    {
+                        loader: "css-loader" // translates CSS into CommonJS
+                    },
+                    {
+                        loader: "sass-loader" // compiles Sass to CSS
+                    }  
+                ]
+            }
+        ]        
+    }
+};
+
+/*
+,
+            {
+                test: /\.js$/,
+                loader: 'raw-loader'
+            }
+
+
+rules: [{
             test: /\.scss$/,
             use: [{
                 loader: "style-loader" // creates style nodes from JS strings
@@ -17,11 +44,12 @@ module.exports = {
             }, {
                 loader: "sass-loader" // compiles Sass to CSS
             }]
+        },
+        {
+            test: /\.js$/,
+            use: 'raw-loader'
         }]
-    }
-};
 
-/*
 module: {
         rules: [{
             test: /\.scss$/,
