@@ -1,19 +1,58 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
+$navbarColor:#4a4747;
+html{
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #798e94;
+    margin: 0px;
+    background-color: #D2D3D4;
+}
+body{
+    margin: 0px;
+    background-color: #d9e3e4;
+}
 .navbar{
+    $width:42px;
     h1.title{
         display: flex;
         position: relative;
         font-size: 28px;
-        font-weight: bold;
+        vertical-align: middle;
+        align-items: center;
     }
     h1.title:before{
         content: " ";
         display: block;
-        width: 32px;
-        height: 32px;
-        background-image: url("/css/images/32x32.png");
+        width: $width;
+        height: $width;
+        background-image: url("/css/images/64x64.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
+    .nav-link, h1.title{
+        color:white !important;
+        font-weight: bold;
+        margin: 0px 10px;
+    }
+
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important; 
+}
+.bg-faded {
+    background-color: $navbarColor;
+}
+div.container.card{
+    padding: 15px 10px 10px 10px;
+    text-align: justify;
+    border-radius: 0.25em;
+    background-color: white;
+}
+@media screen and (max-width: 800px) {
+    h1.title{
+        margin: 0px auto !important;
+    }    
 }
 /*
 $variable:#F2F2F2;
