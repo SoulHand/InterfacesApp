@@ -1,33 +1,35 @@
 var webpack = require('webpack');
 
-// webpack.config.js 
+
 module.exports = {
-    entry: './scss/main.scss',
+    entry: './src/js/main.js',
     output: {
-        path: './scss',
-        filename: './css/app.css'
+        path: './dist/',
+        filename: 'app.js'
     },
     module: {
         loaders: [
-          { test: /\.scss?$/, loader: "sass-loader" }
-        ],
-    }
+            { 
+                test: /\.(css|scss)$/, 
+                use:[
+                    {
+                        loader: "style-loader" // creates style nodes from JS strings
+                    },
+                    {
+                        loader: "css-loader" // translates CSS into CommonJS
+                    },
+                    {
+                        loader: "sass-loader" // compiles Sass to CSS
+                    }  
+                ]
+            }
+        ]        
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+           $: "jquery",
+           jQuery: "jquery",
+           Tether:"tether"
+       })
+    ]
 };
-
-/*
-module: {
-        rules: [{
-            test: /\.scss$/,
-            use: [{
-                loader: "style-loader" // creates style nodes from JS strings 
-            }, {
-                loader: "css-loader" // translates CSS into CommonJS 
-            }, {
-                loader: "sass-loader", // compiles Sass to CSS 
-                options: {
-                    includePaths: ["scss/"]
-                }
-            }]
-        }]
-    }
-*/
