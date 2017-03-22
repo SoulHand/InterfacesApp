@@ -4,7 +4,7 @@
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="stilo..css" rel="stylesheet" type="text/css">
+    <link href="stilo2.css" rel="stylesheet" type="text/css">
   </head><body>
     <div class="menu navbar navbar-default navbar-static-top" id="menu">
       <div class="container">
@@ -71,43 +71,58 @@
         </div>
       </div>
     </div>
-    <div class="seccion section text-center">
+    <div class="section">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 from">
-            <img src="..\Documents\SoulHand\InterfacesApp\css\images\user-login-icon-14.png" class="img-circle img-responsive imagen" id="logo">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 from text-center">
+          <div class="col-md-10 seccion">
+            <h1 class="text-center">Registro de Docente</h1>
             <form class="form-horizontal from text-center" role="form">
-              <div class="form-group has-feedback mmmmm" id="usuario">
+              <div class="form-group cuadro" id="cedulap">
                 <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">Usuario</label>
+                  <label class="control-label">Cedula:</label>
                 </div>
-                <div class="col-sm-10" id="usuario">
-                  <input type="text" class="form-control cuadro" id="usuario" placeholder="Usuario">
-                </div>
-                <div class="col-sm-offset-2 col-sm-10">
-                  <p class="help-block text-left">Introduzaca su nombre de usuario.</p>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
                 </div>
               </div>
-              <div class="form-group" id="password">
+              <div class="form-group cuadro" id="nombre_d">
                 <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">Contraseña</label>
+                  <label class="control-label">Nombre:</label>
                 </div>
-                <div class="col-sm-10 cuadro">
-                  <input type="password" class="form-control cuadro" id="Password" placeholder="Contraseña">
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="nombre_d">
                 </div>
-                <div class="col-sm-offset-2 col-sm-10">
-                  <p class="help-block text-left">Introduzca su contraseña.</p>
+              </div>
+              <div class="form-group cuadro">
+                <div class="col-sm-2">
+                  <label class="control-label">Apellido:</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group cuadro">
+                <div class="col-sm-2">
+                  <label class="control-label">Telefono:</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group cuadro">
+                <div class="col-sm-2">
+                  <label for="inputEmail3" class="control-label">Email</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                 </div>
               </div>
               <div class="form-group">
-                <button type="submit" class="boton-e btn btn-block btn-lg btn-success" data-toggle="modal" id="entrar">Entrar</button>
+                <div class="boton-g col-sm-10 col-sm-offset-2 text-left">
+                  <button type="submit" class="boton-g btn btn-primary" id="guardar" draggable="true">GUARDAR</button>
+                </div>
               </div>
             </form>
-            <a class="boton-r btn btn-lg btn-primary" id="registrar">Registrar</a>
           </div>
         </div>
       </div>
