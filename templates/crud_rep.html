@@ -1,0 +1,143 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="C:\Users\Isamar\Documents\SoulHand\InterfacesApp\css\stilo2.css" rel="stylesheet" type="text/css">
+  </head><body>
+    <div class="menu navbar navbar-default navbar-static-top" id="menu">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand titulo" id="home"><span><b>SOULHAND</b></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-left navbar-nav">
+            <li class="dropdown menu" id="persona">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span>Persona</span> <i class="fa fa-caret-down text-muted"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">Docente</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">Estudiante</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">Represetante</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown menu" id="pensus">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span>Pensus</span> <i class="fa fa-caret-down text-muted"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">Grado</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">Periodo Escolar</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown menu" id="actividad">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span>Actividades</span> <i class="fa fa-caret-down text-muted"></i></a>
+              <ul class="dropdown-menu" role="menu"></ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown menu" id="sesion">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <i class="et-down fa fa-lg fa-user text-inverse"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">Mi Perfil</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">Cerrar Sesión</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-right text-left" role="search" id="buscar">
+            <div class="col-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon text-right" id="buscar">
+                  <i class="fa fa-fw fa-lg fa-search text-primary"></i>
+                </span>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </form>
+          <ul class="nav navbar-left navbar-nav"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h1 class="text-center">Representante
+        <i class="fa fa-border fa-fw fa-plus-circle text-success" id="agregar"></i>
+      </h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Cedula</th>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Dirección</th>
+                  <th>Telefono</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="ced_rep">1</td>
+                  <td id="nom_rrep">Mark</td>
+                  <td id="ape_rep">Otto</td>
+                  <td id="direccion">Urb "los chaima"</td>
+                  <td id="tel_rep">1235678</td>
+                  <td id="accion">
+                    <a class="botones btn btn-sm btn-warning" id="modificar"><i class="fa fa-fw fa-lg fa-pencil"></i></a>
+                    <a class="botones btn btn-danger btn-sm" id="eliminar"><i class="fa fa-close fa-fw fa-lg"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>Urb "la llanada"</td>
+                  <td>1235678</td>
+                  <td id="accion">
+                    <a class="botones btn btn-sm btn-warning" id="modificar"><i class="fa fa-fw fa-lg fa-pencil"></i></a>
+                    <a class="botones btn btn-danger btn-sm" id="eliminar"><i class="fa fa-close fa-fw fa-lg"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>Calle Bolivar</td>
+                  <td>1235678</td>
+                  <td id="accion">
+                    <a class="botones btn btn-sm btn-warning" id="modificar"><i class="fa fa-fw fa-lg fa-pencil"></i></a>
+                    <a class="botones btn btn-danger btn-sm" id="eliminar"><i class="fa fa-close fa-fw fa-lg"></i></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+</body></html>
