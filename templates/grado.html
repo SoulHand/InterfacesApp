@@ -4,9 +4,9 @@
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="..\css\stilo2.css" rel="stylesheet" type="text/css">
+    <link href="C:\Users\Isamar\Documents\SoulHand\InterfacesApp\css\stilo2.css" rel="stylesheet" type="text/css">
   </head><body>
-      <div class="menu navbar navbar-default navbar-static-top" id="menu">
+    <div class="menu navbar navbar-default navbar-static-top" id="menu">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
@@ -75,64 +75,34 @@
         </div>
       </div>
     </div>
-    <div class="section">
-      <h1 class="text-center">Docente
-        <i class="fa fa-border fa-fw fa-plus-circle text-success" id="agregar"></i>
-      </h1>
+    <div class="section text-justify">
+      <h1 class="text-center">Registrar Grado</h1>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <table class="table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>Cedula</th>
-                  <th>Nombre</th>
-                  <th>Apellido</th>
-                  <th>Telefono</th>
-                  <th>Email</th>
-                  <th>Interprete</th>
-                  <th>Acción</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td id="ced_doc">1</td>
-                  <td id="nom_doc">Mark</td>
-                  <td id="ape_doc">Otto</td>
-                  <td id="tel_doc">1235678</td>
-                  <td id="correo">@mdo</td>
-                  <td id="interprete">NO</td>
-                  <td id="accion">
-                    <a class="active botones btn btn-sm btn-warning" id="modificar"><i class="fa fa-fw fa-lg fa-pencil"></i></a>
-                    <a class="botones btn btn-danger btn-sm" id="eliminar"><i class="fa fa-close fa-fw fa-lg"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>1235678</td>
-                  <td>@fat</td>
-                  <td>NO</td>
-                  <td id="accion">
-                    <a class="botones btn btn-sm btn-warning" id="modificar"><i class="fa fa-fw fa-lg fa-pencil"></i></a>
-                    <a class="botones btn btn-danger btn-sm" id="eliminar"><i class="fa fa-close fa-fw fa-lg"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>1235678</td>
-                  <td>@twitter</td>
-                  <td>NO</td>
-                  <td id="accion">
-                    <a class="botones btn btn-sm btn-warning" id="modificar"><i class="fa fa-fw fa-lg fa-pencil"></i></a>
-                    <a class="botones btn btn-danger btn-sm" id="eliminar"><i class="fa fa-close fa-fw fa-lg"></i></a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <div class="col-sm-2 text-center">
+                  <label for="inputEmail3" class="control-label">Código:</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="cod_grado">
+                </div>
+              <div class="col-sm-offset-2 col-sm-10"><p class="help-block"></p></div></div>
+              <div class="form-group">
+                <div class="col-sm-2 text-center">
+                  <label for="inputPassword3" class="control-label">Nombre:</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="nom_grado">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-block btn-primary">Guardar</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
