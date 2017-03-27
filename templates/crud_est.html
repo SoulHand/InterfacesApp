@@ -4,9 +4,8 @@
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="..\css\stilo..css" rel="stylesheet" type="text/css">
+    <link href="C:\Users\Isamar\Documents\SoulHand\InterfacesApp\css\stilo2.css" rel="stylesheet" type="text/css">
   </head><body>
-   
     <div class="menu navbar navbar-default navbar-static-top" id="menu">
       <div class="container">
         <div class="navbar-header">
@@ -81,43 +80,56 @@
         </div>
       </div>
     </div>
-    <div class="seccion section text-center">
+    <div class="section">
+      <h1 class="text-center">Estudiante
+        <i class="fa fa-border fa-fw fa-plus-circle text-success" id="agregar"></i>
+      </h1>
       <div class="container">
         <div class="row">
-          <div class="col-md-12 from">
-            <img src="..\css\images\user-login-icon-14.png" class="img-circle img-responsive imagen" id="logo">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 from text-center">
-            <form class="form-horizontal from text-center" role="form">
-              <div class="form-group has-feedback mmmmm" id="usuario">
-                <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">Usuario</label>
-                </div>
-                <div class="col-sm-10" id="usuario">
-                  <input type="text" class="form-control cuadro" id="usuario" placeholder="Usuario">
-                </div>
-                <div class="col-sm-offset-2 col-sm-10">
-                  <p class="help-block text-left">Introduzaca su nombre de usuario.</p>
-                </div>
-              </div>
-              <div class="form-group" id="password">
-                <div class="col-sm-2">
-                  <label for="inputEmail3" class="control-label">Contraseña</label>
-                </div>
-                <div class="col-sm-10 cuadro">
-                  <input type="password" class="form-control cuadro" id="Password" placeholder="Contraseña">
-                </div>
-                <div class="col-sm-offset-2 col-sm-10">
-                  <p class="help-block text-left">Introduzca su contraseña.</p>
-                </div>
-              </div>
-              <div class="form-group">
-                <button type="submit" class="boton-e btn btn-block btn-lg btn-success" data-toggle="modal" id="entrar">Entrar</button>
-              </div>
-            </form>
-            <a class="boton-r btn btn-lg btn-primary" id="registrar">Registrar</a>
+          <div class="col-md-12">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Represetante</th>
+                  <th>Fecha de Nacimieto</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="nom_doc">Mark</td>
+                  <td id="ape_doc">Otto</td>
+                  <td id="tel_doc">Maria de Otton</td>
+                  <td id="correo">22/08/2009</td>
+                  <td id="accion">
+                    <a class="active botones btn btn-sm btn-warning" id="modificar"><i class="fa fa-fw fa-lg fa-pencil"></i></a>
+                    <a class="botones btn btn-danger btn-sm" id="eliminar"><i class="fa fa-close fa-fw fa-lg"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>Pedro Thornton</td>
+                  <td>03/07/2010</td>
+                  <td id="accion">
+                    <a class="botones btn btn-sm btn-warning" id="modificar"><i class="fa fa-fw fa-lg fa-pencil"></i></a>
+                    <a class="botones btn btn-danger btn-sm" id="eliminar"><i class="fa fa-close fa-fw fa-lg"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>Marta Garcial</td>
+                  <td>01/12/2004</td>
+                  <td id="accion">
+                    <a class="botones btn btn-sm btn-warning" id="modificar"><i class="fa fa-fw fa-lg fa-pencil"></i></a>
+                    <a class="botones btn btn-danger btn-sm" id="eliminar"><i class="fa fa-close fa-fw fa-lg"></i></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
