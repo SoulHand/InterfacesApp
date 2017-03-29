@@ -248,10 +248,16 @@ div.fieldset{
         font-weight: bold;
         font-family: inherit;
     }
-    div.item div.container-element{    
+    div.item div.container-element, div.item > div.toolbox{
         overflow: hidden;
         text-overflow: ellipsis;
         display: flex;
+    }
+    div.item > div.toolbox{
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    div.item div.container-element{
         flex-flow: column nowrap;
         justify-content: center;
     }
