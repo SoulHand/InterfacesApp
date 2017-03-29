@@ -9,7 +9,6 @@
 	font-family: Arial;
 	font-size: 24px;
 	font-weight: bold;
-	padding: 15px 25px;
 	margin: 2px;
 	box-shadow: -1px -1px 8px rgba(0, 0, 0, 0.35) inset;
 	white-space: nowrap;
@@ -17,8 +16,12 @@
 	display: block;
 	max-width:99%;
 	overflow: hidden;
+	padding: 2px;
 	@extend .text-align.center;
 	@extend .transitions.linear;
+	&not(.circle){
+		padding: 15px 25px;
+	}
 	&.all{
   		margin: 2px auto !important;		
 	}
@@ -44,9 +47,6 @@
 	&.circle:disabled,&.circle.disabled{
 	    background-color: #3E4042 !important;
 	}
-}
-.flex .button.circle{
-	flex:0 0 auto !important;
 }
 
 

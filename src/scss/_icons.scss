@@ -3,78 +3,160 @@
     background-repeat: no-repeat;    
 }
 .icons{
+	flex:0 0 auto !important;
     &.x16{
         width: 38px !important;
         height: 38px !important;
+        &.check{
+        	&.black{
+    			background-position: -168px -7294px;        		
+        	}
+        	&.white{
+    			background-position: -120px -7294px;        		
+        	}
+        }
+        &.add{
+        	&.black{
+    			background-position: -169px -7230px;
+        	}
+        	&.white{
+    			background-position: -120px -7230px;
+        	}
+        }
+        &.government{
+        	&.black{
+    			background-position: -176px -265px;
+        	}
+        	&.white{
+    			background-position: -170px -325px;
+        	}
+        }
+        &.book{
+        	&.black{
+    			background-position: -176px -405px;
+        	}
+        	&.white{
+    			background-position: -176px -473px;
+        	}
+        }
     }
     &.x24{
         width: 48px !important;
         height: 48px !important;
+        &.check{
+        	&.black{
+    			background-position: -164px -7288px;
+        	}
+        	&.white{
+    			background-position: -115px -7289px;        		
+        	}
+        }
+        &.add{
+        	&.black{
+    			background-position: -165px -7225px;
+        	}
+        	&.white{
+    			background-position: -115px -7225px;
+        	}
+        }
+        &.government{
+        	&.black{
+    			background-position: -126px -255px;
+        	}
+        	&.white{
+    			background-position: -127px -316px;
+        	}
+        }
+        &.book{
+        	&.black{
+    			background-position: -127px -396px;
+        	}
+        	&.white{
+    			background-position: -127px -464px;
+        	}
+        }
     }
     &.x32{
         width: 54px !important;
         height: 54px !important;
+        &.check{
+        	&.black{
+    			background-position: -160px -7286px;
+        	}
+        	&.white{
+    			background-position: -112px -7286px;
+        	}
+        }
+        &.add{
+        	&.black{
+    			background-position: -161px -7220px;
+        	}
+        	&.white{
+    			background-position: -111px -7221px;
+        	}
+        }
+        &.government{
+        	&.black{
+    			background-position: -67px -249px;
+        	}
+        	&.white{
+    			background-position: -68px -308px;
+        	}
+        }
+        &.book{
+        	&.black{
+    			background-position: -68px -388px;
+        	}
+        	&.white{
+    			background-position: -69px -456px;
+        	}
+        }
     }
     &.x48{
         width: 64px !important;
         height: 64px !important;
-    }
+        &.check{
+        	&.black{
+    			background-position: -155px -7280px;
+        	}
+        	&.white{
+    			background-position: -107px -7280px;
+        	}
+        }
+        &.add{
+        	&.black{
+    			background-position: -156px -7216px;
+        	}
+        	&.white{
+    			background-position: -107px -7216px;
+        	}
+        }
+        &.government{
+        	&.black{
+    			background-position: -5px -236px;
+        	}
+        	&.white{
+    			background-position: -5px -297px;
+        	}
+        }
+        &.book{
+        	&.black{
+    			background-position: -64px -383px;
+        	}
+        	&.white{
+    			background-position: -64px -453px;
+        	}
+        }
+    }    
 }
 /* government icons */
-.icons.x16.government.white,div.mime.icons.government{
-    background-position: -165px -319px;
-}
-.icons.x16.government.black{
-   background-position: -171px -260px;
-}
-.icons.x24.government.white{
-   background-position: -121px -309px;
-}
-.icons.x24.government.black{
-    background-position: -121px -250px;
-}
-.icons.x32.government.white{
-   background-position: -61px -302px;
-}
-.icons.x32.government.black{
-    background-position: -62px -243px;
-}
+
 div.profile.icons.government{
    background-position: 10px -288px;
 }
-.icons.x48.government.white{
-    background-position: 0px -291px;
-}
-.icons.x48.government.black{
-    background-position: 0px -233px;
-}
-/* book icons */
-.icons.x16.book.white,div.mime.icons.book{
-    background-position: -172px -468px;
-}
-.icons.x16.book.black{
-    background-position: -171px -400px;
-}
-.icons.x24.book.white{
-    background-position: -123px -459px;
-}
-.icons.x24.book.black{
-    background-position: -122px -391px;
-}
-.icons.x32.book.white{
-   background-position: -63px -452px;
-}
-.icons.x32.book.black{
-    background-position: -62px -383px;
-}
+
 div.profile.icons.book{
    background-position: 10px -430px;
-}
-.icons.x48.book.white{
-    background-position: 0px -436px;
-}
-.icons.x48.book.black{
-   background-position: 0px -370px;
 }
 /* Box Icons */
 .icons.x16.box.white,div.mime.icons.app{
@@ -1395,42 +1477,7 @@ div.profile div.capture{
 .icons.x32.capture.black{
    background-position: -47px -7330.6px;
 }
-.icons.x24.add.white{
-   background-position: -111px -7219px;
-}
-.icons.x32.add.white{
-   background-position: -108px -7215px;
-}
-.icons.x16.add.black{
-    background-position: -165px -7224px;
-}
-.icons.x16.add.white{
-    background-position: -115px -7224px;
-}
-.icons.x24.add.black{
-    background-position: -158px -7219px;
-}
-.icons.x32.add.black{
-   background-position: -156px -7216px;
-}
-.icons.x24.check.white{
-   background-position: -111px -7283px;
-}
-.icons.x32.check.white{
-   background-position: -108px -7281px;
-}
-.icons.x16.check.black{
-    background-position: -165px -7288px;
-}
-.icons.x16.check.white{
-    background-position: -115px -7287px;
-}
-.icons.x24.check.black{
-   background-position: -158px -7283px;
-}
-.icons.x32.check.black{
-   background-position: -155px -7279px;
-}
+
 .icons.x24.bar.white{
    background-position: 16px -7390px;
 }
