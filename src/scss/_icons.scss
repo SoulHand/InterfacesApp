@@ -39,6 +39,22 @@
     			background-position: -176px -473px;
         	}
         }
+        &.box{
+        	&.black{
+    			background-position: -178px -556px;
+        	}
+        	&.white{
+    			background-position: -178px -623px;
+        	}
+        }
+        &.cancel{
+        	&.black{
+    			background-position: -176px -697px;
+        	}
+        	&.white{
+    			background-position: -177px -768px;
+        	}
+        }
     }
     &.x24{
         width: 48px !important;
@@ -72,7 +88,23 @@
     			background-position: -127px -396px;
         	}
         	&.white{
-    			background-position: -127px -464px;
+    			background-position: -129px -614px;
+        	}
+        }
+        &.box{
+        	&.black{
+    			background-position: -128px -546px;
+        	}
+        	&.white{
+    			background-position: -129px -614px;
+        	}
+        }
+        &.cancel{
+        	&.black{
+    			background-position: -128px -687px;
+        	}
+        	&.white{
+    			background-position: -128px -758px;
         	}
         }
     }
@@ -111,6 +143,22 @@
     			background-position: -69px -456px;
         	}
         }
+        &.box{
+        	&.black{
+    			background-position: -69px -538px;
+        	}
+        	&.white{
+    			background-position: -69px -606px;
+        	}
+        }
+        &.cancel{
+        	&.black{
+    			background-position: -68px -679px;
+        	}
+        	&.white{
+    			background-position: -69px -751px;
+        	}
+        }
     }
     &.x48{
         width: 64px !important;
@@ -147,6 +195,22 @@
     			background-position: -64px -453px;
         	}
         }
+        &.box{
+        	&.black{
+    			background-position: -65px -532px;
+        	}
+        	&.white{
+    			background-position: -65px -601px;
+        	}
+        }
+        &.cancel{
+        	&.black{
+    			background-position: -65px -676px;
+        	}
+        	&.white{
+    			background-position: -65px -747px;
+        	}
+        }
     }    
 }
 /* government icons */
@@ -158,59 +222,10 @@ div.profile.icons.government{
 div.profile.icons.book{
    background-position: 10px -430px;
 }
-/* Box Icons */
-.icons.x16.box.white,div.mime.icons.app{
-   background-position: -172px -617px;
-}
-.icons.x16.box.black{
-   background-position: -171px -549px;
-}
-.icons.x24.box.white{
-   background-position: -122px -608px;
-}
-.icons.x24.box.black{
-   background-position: -123px -539px;
-}
-.icons.x32.box.white{
-   background-position: -65px -601px;
-}
-.icons.x32.box.black{
-    background-position: -65px -534px;
-}
-.icons.x48.box.white{
-    background-position: -2px -587px;
-}
 div.profile.icons.app{
     background-position: 9px -579px;
 }
-.icons.x48.box.black{
-   background-position: -2px -521px;
-}
-/* cancel Icons */
-.icons.x16.cancel.white{
-   background-position: -172px -761px;
-}
-.icons.x16.cancel.black{
-   background-position: -171px -691px;
-}
-.icons.x24.cancel.white{
-   background-position: -122px -752px;
-}
-.icons.x24.cancel.black{
-   background-position: -123px -681px;
-}
-.icons.x32.cancel.white{
-   background-position: -63px -745px;
-}
-.icons.x32.cancel.black{
-    background-position: -63px -673px;
-}
-.icons.x48.cancel.white{
-    background-position: -2px -732px;
-}
-.icons.x48.cancel.black{
-   background-position: -2px -661px;
-}
+
 /* business Icons */
 .icons.x16.business.white,div.mime.icons.business{
     background-position: -172px -916px;
