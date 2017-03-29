@@ -1,3 +1,5 @@
+@import "media";
+
 /*    Flexbox   */
 .flex{
   display: flex;
@@ -6,6 +8,9 @@
   }
   &.row{
     flex-flow: row nowrap;
+    width:100%;
+    overflow-x:hidden;
+    position:relative;
   }
   /*  Flexbox Vertical Align */
   &.v-align{
@@ -162,12 +167,14 @@ input, button, select, textarea {
 /*    Box container     */
 
 div.box{
-    @extend .flex.column;
+    display: flex;
+    flex-flow:column nowrap;
     margin:5px 10px;
     border: 1px solid #c2c2c266;
     padding: 0px;
     border-radius: 0.25em;
     margin-top: 5px;
+    max-width:350px;
     div.box-view{
         margin: 20px 25px;
     }
@@ -185,5 +192,26 @@ div.box{
     .indication{
         @extend .label;
         font-size: 2.5em;
-    }    
+    }   
+}
+div.panel{
+    &.flex.row{
+        overflow-x:auto;
+    }
+}
+@media screen and (max-width: $WeightGalaxy) {
+    div.container{
+        width:100%;
+    }
+    div.box{
+        width:100% !important;
+    }
+    .flex.row:not(.noresponse){
+        flex-flow: column nowrap !important;
+        align-items: stretch !important;
+        justify-content: flex-start !important;
+        overflow:hidden;
+        width:100%;
+        margin: 5px auto;
+    }
 }

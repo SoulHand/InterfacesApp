@@ -94,7 +94,7 @@ div.content{
     margin: 0px auto;
     padding: 0px;
     div.body{    
-        @extend .flex;
+        display: flex;
         position: relative;
         width: $appcontainerWith;
         height: $appcontainerHeight;
@@ -105,8 +105,8 @@ div.content{
         justify-content: flex-start;
         align-items: stretch;
         section.page{
-            @extend .flex;
-            @extend .flex.column;
+            display: flex;
+            flex-flow:column nowrap;
             @extend .flex.h-align.left;
             position: relative;
             width: $appcontainerWith;
@@ -184,12 +184,12 @@ div.content.slider[data-align="right"]{
     transform: translate($sliderLeft);
 }
 div.bar{
-  @extend .flex;
-  @extend .flex.row;
   @extend .flex.v-align.middle;
   @extend .flex.h-align.right;  
   @extend .shadow-bottom;  
-  @extend .border-bottom;  
+  @extend .border-bottom;
+  display: flex;
+  flex-flow:row nowrap;
   margin: 0px;  
   padding: 10px 5px;
   &.top, &.bottom{
