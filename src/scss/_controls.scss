@@ -1,3 +1,115 @@
+/*    Flexbox   */
+.flex{
+  display: flex;
+  &.column{
+    flex-flow: column nowrap;
+  }
+  &.row{
+    flex-flow: row nowrap;
+  }
+  /*  Flexbox Vertical Align */
+  &.v-align{
+    &.left{
+      align-items: flex-start !important;
+    }
+    &.middle{
+      align-items: center !important;
+    }
+    &.right{
+      align-items: flex-end !important;
+    }    
+  }
+  /*  Flexbox Horizontal Align */
+  &.h-align{
+    &.left{
+      justify-content: flex-start !important;
+    }
+    &.middle{
+      justify-content: center !important;
+    }
+    &.right{
+      justify-content: flex-end !important;
+    }
+  }
+  &.vh-align{
+    &.middle{
+      @extend .flex.h-align.middle;
+      @extend .flex.v-align.middle;
+    }
+    &.left{
+      @extend .flex.h-align.left;
+      @extend .flex.v-align.left;
+    }
+    &.right{
+      @extend .flex.h-align.right;
+      @extend .flex.v-align.right;
+    }
+  }  
+}
+.shadow{
+  &-bottom{    
+    box-shadow: 0px 1px 5px rgba(0,0,0,.32);
+    &-left{
+      box-shadow: -1px 1px 5px rgba(0,0,0,.32);      
+    }
+    &-right{
+      box-shadow: 2px 1px 5px rgba(0,0,0,.32);      
+    }
+  }
+  &-top{
+    box-shadow: 0px -1px 5px rgba(0,0,0,.32);
+    &-left{
+      box-shadow: -1px -1px 5px rgba(0,0,0,.32);      
+    }
+    &-right{
+      box-shadow: 2px -1px 5px rgba(0,0,0,.32);      
+    }    
+  }
+}
+.border{
+  &-top{
+    border-top: 1px solid #c2c2c266;
+  }
+  &-bottom{
+    border-bottom: 1px solid #c2c2c266;
+  }
+  &-left{
+    border-left: 1px solid #c2c2c266;
+  }
+  &-right{
+    border-right: 1px solid #c2c2c266;
+  }
+  &-all{
+    border: 1px solid #c2c2c266;
+  }
+}
+.text{
+  &-align{
+    &.left{
+      text-align: left;
+    }
+    &.center{
+      text-align: center;
+    }
+    &.right{
+      text-align: right;
+    }
+    &.justify{
+      text-align: justify;
+    }
+  }
+}
+.nowrap{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;  
+}
+.label{
+  @extend .nowrap;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 button, input, optgroup, select, textarea {
     color: inherit;
     font: inherit;
@@ -45,4 +157,17 @@ input, button, select, textarea {
     &:hover, &:focus {
         background-color: #dddddd;
     }
+}
+
+/*    Box container     */
+
+div.box{
+    margin:5px 10px;
+    border: 1px solid #c2c2c266;
+    padding: 15px 25px;
+    border-radius: 0.25em;
+    margin-top: 5px;
+    .indication{
+        font-size: 2.5em;
+    }    
 }

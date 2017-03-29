@@ -1,69 +1,6 @@
+@import "controls";
+@import "media";
 
-
-/*     Medidas telefonos     */
-
-$WidthIphone4: 320px;
-$HeightIphone4: 480px;
-
-$WidthIphone5:320px;
-$HeightIphone5:568px;
-
-
-$WidthIphone6:375px;
-$HeightIphone6:667px;
-
-
-$WidthNexus4:348px;
-$HeightNexus4:598px;
-
-
-$WidthNexus5:360px;
-$HeightNexus5: $HeightNexus4;
-
-$WeightGalaxy:360px;
-$HeightGalaxy:640px;
-
-/*     Medidas telefonos     */
-
-
-/*     Medidas tablet     */
-
-$WeightGalaxyTab:600px;
-$heightGalaxyTab:1024px;
-
-$WeightNexus7:603px;
-$HeightNexus7:966px;
-
-$WeightNexus10:800px;
-$HeightNexus10:1280px;
-
-/*     Medidas tablet     */
-
-/*     Medidas desktop     */
-$widthDesktopMin:$heightGalaxyTab;
-$HeightDesktopMin:$WeightGalaxyTab;
-
-$widthDesktopMed:$HeightNexus10;
-$HeightDesktopMed:$WeightNexus10;
-
-$widthDesktopMax:1400px;
-$HeightDesktopMax:900px;
-
-/*     Medidas desktop     */
-
-
-$bodycolor:#F2F2F2;
-$fontColor:#5A5A5A;
-$linkColor:#237FAB;
-$linkColorHover:#0095DD;
-
-$sliderLeft:-50vw;
-$sliderRight:50vw;
-
-$appcontainerWith:100vw;
-$appcontainerHeight:100vh;
-$menuContainerWith:75vw;
-$menuContainerHeight:100vh;
 
 html{
     overflow: hidden !important;
@@ -87,104 +24,8 @@ font-weight: bold;
 a:hover{
     color: $linkColorHover;
 }
-/*    Flexbox   */
-.flex{
-  display: flex;
-  &.column{
-    flex-flow: column nowrap;
-  }
-  &.row{
-    flex-flow: row nowrap;
-  }
-  /*  Flexbox Vertical Align */
-  &.v-align{
-    &.left{
-      align-items: flex-start !important;
-    }
-    &.middle{
-      align-items: center !important;
-    }
-    &.right{
-      align-items: flex-end !important;
-    }    
-  }
-  /*  Flexbox Horizontal Align */
-  &.h-align{
-    &.left{
-      justify-content: flex-start !important;
-    }
-    &.middle{
-      justify-content: center !important;
-    }
-    &.right{
-      justify-content: flex-end !important;
-    }
-  }
-  &.vh-align{
-    &.middle{
-      @extend .flex.h-align.middle;
-      @extend .flex.v-align.middle;
-    }
-    &.left{
-      @extend .flex.h-align.left;
-      @extend .flex.v-align.left;
-    }
-    &.right{
-      @extend .flex.h-align.right;
-      @extend .flex.v-align.right;
-    }
-  }  
-}
-.shadow{
-  &-bottom{    
-    box-shadow: 0px 1px 5px rgba(0,0,0,.32);
-    &-left{
-      box-shadow: -1px 1px 5px rgba(0,0,0,.32);      
-    }
-    &-right{
-      box-shadow: 2px 1px 5px rgba(0,0,0,.32);      
-    }
-  }
-  &-top{
-    box-shadow: 0px -1px 5px rgba(0,0,0,.32);
-    &-left{
-      box-shadow: -1px -1px 5px rgba(0,0,0,.32);      
-    }
-    &-right{
-      box-shadow: 2px -1px 5px rgba(0,0,0,.32);      
-    }    
-  }
-}
-.border{
-  &-top{
-    border-top: 1px solid #c2c2c266;
-  }
-  &-bottom{
-    border-bottom: 1px solid #c2c2c266;
-  }
-  &-left{
-    border-left: 1px solid #c2c2c266;
-  }
-  &-right{
-    border-right: 1px solid #c2c2c266;
-  }
-}
-.text{
-  &-align{
-    &.left{
-      text-align: left;
-    }
-    &.center{
-      text-align: center;
-    }
-    &.right{
-      text-align: right;
-    }
-    &.justify{
-      text-align: justify;
-    }
-  }
-}
+
+
 .transitions{
   transition-property: all;
   transition-delay: 0s;
@@ -242,16 +83,7 @@ a:hover{
     }    
   }
 }
-.nowrap{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;  
-}
-.label{
-  @extend .nowrap;
-  font-size: 1.5em;
-  font-weight: bold;
-}
+
 /*         Container Main Apps         */
 div.content{
     display:flex;
@@ -396,64 +228,3 @@ div.bar{
     } 
   }
 }
-
-
-
-.menu {
-  background: #222222;
-  font-size: 18px;
-  color: #222222;
-}
-.titulo {
-  font-size: 20px;
-  color: #222;
-}
-a,
-span {
-  color: #ffffff;
-}
-.sesion {
-  font-size: 14px;
-}
-.login {
-  font-size: 100px;
-}
-.imagen {
-  width: 150px;
-  height: 150px;
-  padding-top: 5px;
-  padding-right: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 1px;
-  margin-left: 270px;
-}
-.seccion {
-  background: #efefef;
-  max-width: 400px;
-  margin-top: 50px;
-  margin-right: 10px;
-  margin-bottom: 1px;
-  margin-left: 300px;
-  border: 100px;
-  overflow: hidden;
-}
-.cuadro {
-  width: 400px;
-}
-.from {
-  width: 600px;
-  margin-left: 60px;
-}
-.boton-e {
-  width: 400px;
-  margin-left: 120px;
-}
-.boton-r {
-  width: 400px;
-  margin-left: 160px;
-}
-
-
