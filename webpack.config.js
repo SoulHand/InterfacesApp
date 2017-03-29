@@ -2,9 +2,9 @@ var webpack = require('webpack');
 
 // webpack.config.js
 module.exports = {
-    entry: 'src/js/main.js',
+    entry: './src/js/main.js',
     output: {
-        path: 'dist',
+        path: __dirname + 'dist/',
         filename: 'app.js'
     },
     module: {
