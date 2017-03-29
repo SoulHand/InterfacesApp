@@ -162,12 +162,28 @@ input, button, select, textarea {
 /*    Box container     */
 
 div.box{
+    @extend .flex.column;
     margin:5px 10px;
     border: 1px solid #c2c2c266;
-    padding: 15px 25px;
+    padding: 0px;
     border-radius: 0.25em;
     margin-top: 5px;
+    div.box-view{
+        margin: 20px 25px;
+    }
+    div.sidebar{
+        align-items:stretch;
+        margin: 0px;
+        padding:5px 15px;
+        background-color: #edecec;
+        border-bottom-right-radius: 0.25em;
+        border-bottom-left-radius: 0.25em;
+        span, label, p{
+            font-weight: bold;
+        }
+    }
     .indication{
+        @extend .label;
         font-size: 2.5em;
     }    
 }
