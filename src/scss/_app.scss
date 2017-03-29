@@ -280,7 +280,15 @@ div.content{
             width: $appcontainerWith;
             height: $appcontainerHeight;
             align-items: stretch;
-            overflow: hidden;   
+            overflow: hidden;
+            .bar{
+              flex:0 0 auto;
+            }
+            .container-body{
+                overflow-y: auto;
+                flex:5 0 80%;
+                margin: 0px;  
+            }
         }
     }
     /*      Menu Panel Config */
@@ -364,7 +372,7 @@ div.bar{
     left:0%;
   }
   .left_side{
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     overflow: hidden;
     min-height: 10%;
   }
@@ -372,11 +380,21 @@ div.bar{
     @extend .text-align.center;
     flex: 2 0 auto;
     min-width: 60%;
+    overflow: hidden;
   }
   .right_side{
     @extend .left_side;
   }
-
+  &.crystal{
+    $gradient:rgba(0, 0, 0, 0.69);
+    color:white;
+    background-color: $gradient;
+    &-gradient{
+      background: -webkit-linear-gradient($gradient, transparent);
+      background: -moz-linear-gradient($gradient, transparent);
+      background: -o-linear-gradient($gradient, transparent);
+    } 
+  }
 }
 
 
