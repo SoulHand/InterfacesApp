@@ -262,6 +262,36 @@ div.fieldset{
         flex:0 0 auto;
     }
 }
+.ec-stars-wrapper {
+    /* Espacio entre los inline-block (los hijos, los `a`) 
+       http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+    font-size: 0;
+    /* Podríamos quitarlo, 
+        pero de esta manera (siempre que no le demos padding), 
+        sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+        también se esté haciendo hover a alguna estrella */
+    display: inline-block;
+    a, small {
+        text-decoration: none;
+        display: inline-block;
+        /* Volver a dar tamaño al texto */
+        font-size: 32px;
+        font-size: 2rem;    
+        color: #FFF;
+    }
+    &.min a, &.min small {
+        font-size: 1rem;
+    }
+    &.active > a:hover ~ a,& > a[seleted] ~ a ,& > small[seleted] ~ small {
+        color: #D7D4D4;
+    }
+    &.active:hover a,& a,& small{
+        color: rgb(39, 130, 228);
+    }
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
 
 @media screen and (max-width: $WeightGalaxy) {
     div.container{
