@@ -48,12 +48,20 @@
         	}
         }
         &.cancel{
+          &.black{
+          background-position: -176px -697px;
+          }
+          &.white{
+          background-position: -177px -768px;
+          }
+        }
+        &.delete{
         	&.black{
-    			background-position: -176px -697px;
+    			background-position: -177px -1679px;
         	}
         	&.white{
-    			background-position: -177px -768px;
-        	}
+            background-position: -177px -1746px;
+          }
         }
     }
     &.x24{
@@ -100,11 +108,19 @@
         	}
         }
         &.cancel{
+          &.black{
+          background-position: -128px -687px;
+          }
+          &.white{
+          background-position: -128px -758px;
+          }
+        }
+        &.delete{
         	&.black{
-    			background-position: -128px -687px;
+    			background-position: -127px -1670px;
         	}
         	&.white{
-    			background-position: -128px -758px;
+    			background-position: -128px -1737px;
         	}
         }
     }
@@ -152,11 +168,19 @@
         	}
         }
         &.cancel{
+          &.black{
+          background-position: -68px -679px;
+          }
+          &.white{
+          background-position: -69px -751px;
+          }
+        }
+        &.delete{
         	&.black{
-    			background-position: -68px -679px;
+    			background-position: -69px -1663px;
         	}
         	&.white{
-    			background-position: -69px -751px;
+    			background-position: -69px -1729px;
         	}
         }
     }
@@ -204,11 +228,19 @@
         	}
         }
         &.cancel{
+          &.black{
+          background-position: -65px -676px;
+          }
+          &.white{
+          background-position: -65px -747px;
+          }
+        }
+        &.delete{
         	&.black{
-    			background-position: -65px -676px;
+    			background-position: -64px -1658px;
         	}
         	&.white{
-    			background-position: -65px -747px;
+    			background-position: -64px -1725px;
         	}
         }
     }    
@@ -358,31 +390,6 @@ div.profile.icons.coffe{
 }
 .icons.x48.compass.black{
    background-position: -3px -1506px;
-}
-/* delete Icons */
-.icons.x16.delete.white{
-  background-position: -173px -1741px;
-}
-.icons.x16.delete.black{
-   background-position: -173px -1674px;
-}
-.icons.x24.delete.white{
-  background-position: -124px -1730px;
-}
-.icons.x24.delete.black{
-   background-position: -124px -1663px;
-}
-.icons.x32.delete.white{
-    background-position: -65px -1722px;
-}
-.icons.x32.delete.black{
-    background-position: -64px -1655px;
-}
-.icons.x48.delete.white{
-    background-position: -4px -1711px;
-}
-.icons.x48.delete.black{
-   background-position: -3px -1644px;
 }
 /* file Icons */
 .icons.x16.file.white{

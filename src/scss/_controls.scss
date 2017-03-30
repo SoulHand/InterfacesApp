@@ -268,7 +268,7 @@ div.fieldset{
         display: flex;
     }
     div.item > div.toolbox{
-        flex-flow: column nowrap;
+        flex-flow: row nowrap;
         justify-content: center;
     }
     div.item div.container-element{
