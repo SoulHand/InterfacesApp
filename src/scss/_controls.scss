@@ -157,10 +157,27 @@ input:focus{
     border: 1px solid transparent;
     border-radius: 4px;
 }
-.navbar-default .navbar-toggle, .bar .navbar-toggle {
+.bar .navbar-toggle {
+  background-color: #3f3b3b;
+  border-color: #4b4b4b;
+  .icon-bar {
+    background-color: white;
+  }
+  &:hover, &:focus {
+    background-color:#272727;
+  }
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     border-color: #dddddd;
+  &:hover, &:focus {
+    background-color: #dddddd;
+  }
+  .icon-bar {
+    background-color: #888888;
+  }
+}
+.navbar-default .navbar-toggle, .bar .navbar-toggle {
     .icon-bar {
-        background-color: #888888;
         display: block;
         width: 22px;
         height: 2px;
@@ -168,9 +185,6 @@ input:focus{
     }
     .icon-bar + .icon-bar {
         margin-top: 4px;
-    }
-    &:hover, &:focus {
-        background-color: #dddddd;
     }
 }
 
