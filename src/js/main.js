@@ -1,5 +1,4 @@
-var jQuery = require("jquery");
-
 require("tether")
-require("../scss/soulhand.scss")
 require("bootstrap")
+require("./material.js")
+window.HighCharts=require("highcharts")
