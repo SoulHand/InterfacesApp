@@ -19,10 +19,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
-<<<<<<< HEAD
-=======
     "highcharts": "^5.0.10",
->>>>>>> interfaz
     "http-server": "~0.9.0"
   },
   "devDependencies": {
@@ -34,8 +31,4 @@
     "url-loader": "^0.5.8",
     "webpack": "^2.2.1"
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> interfaz
